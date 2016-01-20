@@ -1,7 +1,6 @@
 package com.rit.sucy.gui;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import sun.plugin2.main.server.Plugin;
 
 import java.io.File;
 import java.io.FileOutputStream;
