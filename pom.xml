@@ -3,6 +3,18 @@
   <groupId>com.rit.sucy</groupId>
   <artifactId>MCCore</artifactId>
   <version>1.39</version>
+  
+  <distributionManagement>
+    <repository>
+      <id>falistos-nexus</id>
+      <url>http://repo.falistos.ovh/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>falistos-nexus</id>
+      <url>http://repo.falistos.ovh/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
