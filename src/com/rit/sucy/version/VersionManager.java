@@ -449,16 +449,6 @@ public class VersionManager
      */
     public static OfflinePlayer getOfflinePlayer(String name, boolean allowQuery)
     {
-        if (isVersionAtLeast(V1_7_5))
-        {
-            UUID id = PlayerUUIDs.getUUID(name);
-            if (id == null)
-            {
-                if (allowQuery) return Bukkit.getOfflinePlayer(name);
-                else return null;
-            }
-            else return Bukkit.getOfflinePlayer(id);
-        }
-        else return Bukkit.getOfflinePlayer(name);
+    	return Bukkit.getOfflinePlayer(name); // temporary fix for reload issue
     }
 }
